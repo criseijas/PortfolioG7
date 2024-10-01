@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,51 +11,307 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
-<body>
-    <!--<header class="cabecera">
-        <div class="cabecera__container">
-            <img class="cabecera__logo" src="./assets/img/vector.png" alt="Logo">
-            <h1 class="cabecera__titulo">Alura Latam</h1>
-        </div>
-        <nav class="navegacion">
-            <ul class="navegacion__lista">
-                <li class="navegacion__elemento"><a href="#sobre-mi">Sobre mí</a></li>
-                <li class="navegacion__elemento"><a href="#habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones">Aficiones</a></li>
-                <li class="navegacion__elemento"><a href="#formacion">Formación</a></li>
-                <li class="navegacion__elemento"><a href="#proyectos">Proyectos</a></li>
-            </ul>
-            <li class="navegacion__elemento navegacion__elemento--color"><a href="#contacto">alura@gmail.com</a></li>
-        </nav>
-    </header>-->
 
+<body>
     <header class="cabecera">
         <div class="cabecera__container">
             <!-- Se cambia img a picture para mejorar la semántica y flexibilidad en la presentación de imágenes -->
             <picture>
                 <img class="cabecera__logo" src="./assets/img/vector.png" alt="Logo de Alura Latam" />
             </picture>
-            <!-- Se cambia h1 a un elemento más adecuado para el logotipo del sitio -->
-            <h1 class="cabecera__titulo">Alura Latam</h1>
+            <h1 class="cabecera__titulo">Andres Ciro</h1>
         </div>
-        
+
         <!-- El nav se mejora con role="navigation" y aria-label para indicar su propósito -->
         <nav class="navegacion" role="navigation" aria-label="Menú principal">
             <ul class="navegacion__lista">
                 <!-- Se añade aria-label a los enlaces para describir mejor su propósito -->
-                <li class="navegacion__elemento"><a href="#sobre-mi" aria-label="Ir a la sección Sobre mí">Sobre mí</a></li>
-                <li class="navegacion__elemento"><a href="#habilidades" aria-label="Ir a la sección Habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones" aria-label="Ir a la sección Aficiones">Aficiones</a></li>
-                <li class="navegacion__elemento"><a href="#formacion" aria-label="Ir a la sección Formación">Formación</a></li>
-                <li class="navegacion__elemento"><a href="#proyectos" aria-label="Ir a la sección Proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#sobre-mi" aria-label="Ir a la sección Sobre mí">Sobre mí</a>
+                </li>
+                <li class="navegacion__elemento"><a href="#habilidades"
+                        aria-label="Ir a la sección Habilidades">Habilidades</a></li>
+                <li class="navegacion__elemento"><a href="#aficiones" aria-label="Ir a la sección Aficiones">Hobbies</a>
+                </li>
+                <li class="navegacion__elemento"><a href="#formacion"
+                        aria-label="Ir a la sección Formación">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos"
+                        aria-label="Ir a la sección Proyectos">Proyectos</a></li>
             </ul>
-            
+
             <!-- Se cambia el correo electrónico a un link mailto para mejorar la funcionalidad -->
             <div class="navegacion__elemento navegacion__elemento--color">
                 <a href="mailto:alura@gmail.com" aria-label="Enviar un correo a alura@gmail.com">alura@gmail.com</a>
             </div>
         </nav>
     </header>
-    
+    <main>
+        <section class="presentacion" aria-labelledby="presentacion-titulo">
+            <img class="presentacion__foto" src="./assets/img/perfil.jpg" alt="Foto de perfil de Fernando Seijas"
+                width="250" height="250">
+            <div class="presentacion__contenedor">
+                <h2 id="presentacion-titulo" class="presentacion__titulo">¡Hola! Soy Fernando, Desarrollador Web</h2>
+                <p class="presentacion__subtitulo">Tengo experiencia en HTML, CSS, y JavaScript. Actualmente formo parte
+                    del programa Oracle ONE en Alura Latam, donde colaboro en proyectos innovadores y desarrollo
+                    habilidades técnicas y de equipo.</p>
+                <nav aria-label="Enlaces a redes sociales y currículo">
+                    <ul class="redes">
+                        <li class="redes__img">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Ir al perfil de Github de Alura Latam">
+                                Github <img src="./assets/img/arrow.png" alt="" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li class="redes__img">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Ir al perfil de Linkedin de Alura Latam">
+                                Linkedin <img src="./assets/img/arrow.png" alt="" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li class="redes__img">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+                                aria-label="Ir al perfil de Instagram de Alura Latam">
+                                Instagram <img src="./assets/img/arrow.png" alt="" aria-hidden="true">
+                            </a>
+                        </li>
+                        <li class="redes__img">
+                            <a href="assets/Curriculum.pdf" target="_blank" rel="noopener noreferrer"
+                                aria-label="Ver el currículo de Alura Latam">
+                                Currículo <img src="./assets/img/arrow.png" alt="" aria-hidden="true">
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+        <section class="sobre-mi" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
+            <h2 id="titulo-sobre-mi" class="sobre-mi__titulo">Sobre mí</h2>
+            <p class="sobre-mi__texto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
+                dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
+                semper sagittis ligula et lacinia.
+            </p>
+            <p class="sobre-mi__texto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
+                dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
+                semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
+            </p>
+            <figure class="sobre-mi__firma-contenedor">
+                <img class="sobre-mi__firma" src="./assets/img/signature.png" alt="Firma personal de Alura Latam"
+                    width="150" height="50">
+                <figcaption class="sobre-mi__firma-caption">Firma de Fernando Seijas</figcaption>
+            </figure>
+        </section>
+
+        <section class="habilidades" id="habilidades" aria-labelledby="titulo-habilidades">
+            <h2 id="titulo-habilidades" class="habilidades__titulo">Skills</h2>
+            <ul class="habilidades__lista" role="list">
+                <li class="habilidades__elemento">
+                    <figure class="habilidades__item">
+                        <img class="habilidades__icono" src="./assets/img/htlm_icon.png" alt="Icono de HTML 5"
+                            width="30" height="30">
+                        <figcaption class="habilidades__nombre">HTML 5</figcaption>
+                    </figure>
+                </li>
+                <li class="habilidades__elemento">
+                    <figure class="habilidades__item">
+                        <img class="habilidades__icono" src="./assets/img/js_icon.png" alt="Icono de JavaScript"
+                            width="30" height="30">
+                        <figcaption class="habilidades__nombre">JavaScript</figcaption>
+                    </figure>
+                </li>
+                <li class="habilidades__elemento">
+                    <figure class="habilidades__item">
+                        <img class="habilidades__icono" src="./assets/img/php_icon.png" alt="Icono de PHP" width="30"
+                            height="30">
+                        <figcaption class="habilidades__nombre">PHP</figcaption>
+                    </figure>
+                </li>
+                <li class="habilidades__elemento">
+                    <figure class="habilidades__item">
+                        <img class="habilidades__icono" src="./assets/img/nodejs_icon.png" alt="Icono de Node.js"
+                            width="30" height="30">
+                        <figcaption class="habilidades__nombre">Node.js</figcaption>
+                    </figure>
+                </li>
+                <li class="habilidades__elemento">
+                    <figure class="habilidades__item">
+                        <img class="habilidades__icono" src="./assets/img/react_icon.png" alt="Icono de React"
+                            width="30" height="30">
+                        <figcaption class="habilidades__nombre">React</figcaption>
+                    </figure>
+                </li>
+                <li class="habilidades__elemento">
+                    <figure class="habilidades__item">
+                        <img class="habilidades__icono" src="./assets/img/css_icon.png" alt="Icono de CSS" width="30"
+                            height="30">
+                        <figcaption class="habilidades__nombre">CSS</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="hobbies" id="hobbies" aria-labelledby="titulo-hobbies">
+            <h2 id="titulo-hobbies" class="hobbies__titulo">Hobbies</h2>
+            <ul class="hobbies__lista" role="list">
+                <li class="hobbies__elemento">
+                    <figure class="hobbies__item">
+                        <img class="hobbies__icono" src="./assets/img/camera_icon.png" alt="Icono de Camara" width="30"
+                            height="30">
+                        <figcaption class="hobbies__nombre">Fotografía</figcaption>
+                    </figure>
+                </li>
+                <li class="hobbies__elemento">
+                    <figure class="hobbies__item">
+                        <img class="hobbies__icono" src="./assets/img/forkspoon_icon.png"
+                            alt="Icono de Utensillos de comida" width="30" height="30">
+                        <figcaption class="hobbies__nombre">Cena con amigos</figcaption>
+                    </figure>
+                </li>
+                <li class="hobbies__elemento">
+                    <figure class="hobbies__item">
+                        <img class="hobbies__icono" src="./assets/img/guitar_icon.png" alt="Icono de Guitarra"
+                            width="30" height="30">
+                        <figcaption class="hobbies__nombre">Tocar la guitarra</figcaption>
+                    </figure>
+                </li>
+                <li class="hobbies__elemento">
+                    <figure class="hobbies__item">
+                        <img class="hobbies__icono" src="./assets/img/headphones_icon.png" alt="Icono de Auriculares"
+                            width="30" height="30">
+                        <figcaption class="hobbies__nombre">Escuchar música</figcaption>
+                    </figure>
+                </li>
+                <li class="hobbies__elemento">
+                    <figure class="hobbies__item">
+                        <img class="hobbies__icono" src="./assets/img/skate_icon.png" alt="Icono de Skate" width="30"
+                            height="30">
+                        <figcaption class="hobbies__nombre">Practicar skate</figcaption>
+                    </figure>
+                </li>
+                <li class="hobbies__elemento">
+                    <figure class="hobbies__item">
+                        <img class="hobbies__icono" src="./assets/img/css_icon.png" alt="Icono de CSS" width="30"
+                            height="30">
+                        <figcaption class="hobbies__nombre">CSS</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </section>
+
+        <section class="formacion" id="formacion">
+            <h2 class="formacion__titulo">Formación académica</h2>
+            <ul class="formacion__lista">
+                <li class="formacion__elemento">
+                    <article>
+                        <img class="formacion__icono" src="./assets/img/ufpr_logo.png"
+                            alt="Logotipo de la Universidad Federal de Paraná (UFPR)">
+                        <div>
+                            <h3 class="formacion__nombre">Análisis de datos</h3>
+                            <p class="formacion__detalle">2018 - UFPR</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="formacion__elemento">
+                    <article>
+                        <img class="formacion__icono" src="./assets/img/alura_logo.png" alt="Logotipo de Alura">
+                        <div>
+                            <h3 class="formacion__nombre">Formación en UX Design</h3>
+                            <p class="formacion__detalle">2019 - Alura</p>
+                        </div>
+                    </article>
+                </li>
+                <li class="formacion__elemento">
+                    <article>
+                        <img class="formacion__icono" src="./assets/img/ufrj_logo.png"
+                            alt="Logotipo de la Universidad Federal de Río de Janeiro (UFRJ)">
+                        <div>
+                            <h3 class="formacion__nombre">Posgrado en diseño</h3>
+                            <p class="formacion__detalle">En curso - UFRJ</p>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <section class="proyectos" id="proyectos" aria-labelledby="proyectos-titulo">
+            <h2 class="proyectos__titulo" id="proyectos-titulo">Experiencia Profesional</h2>
+            <ul class="proyectos__lista">
+                <li class="proyectos__elemento">
+                    <article class="proyectos__contenedor" role="region" aria-labelledby="proyecto-titulo-1">
+                        <figure>
+                            <img class="proyectos__imagen" src="./assets/img/decod_print.png"
+                                alt="Captura de pantalla del Encriptador de texto, parte del Challenge Oracle">
+                            <figcaption>Encriptador de texto - Challenge Oracle</figcaption>
+                        </figure>
+                        <h3 class="proyectos__nombre" id="proyecto-titulo-1">Encriptador de texto</h3>
+                        <p class="proyectos__descripcion">Aplicación web para encriptar y desencriptar mensajes.</p>
+                        <div class="proyectos__botones">
+                            <a href="https://github.com/user/encriptador" class="proyectos__enlace" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Abrir repositorio del Encriptador de texto en GitHub">Repositorio</a>
+                            <a href="https://user.github.io/encriptador-demo" class="proyectos__enlace" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Ver demostración en vivo del Encriptador de texto">Ver Demo</a>
+                        </div>
+                    </article>
+                </li>
+                <li class="proyectos__elemento">
+                    <article class="proyectos__contenedor" role="region" aria-labelledby="proyecto-titulo-2">
+                        <figure>
+                            <img class="proyectos__imagen" src="./assets/img/forca2_print.png"
+                                alt="Captura de pantalla del Proyecto de la Experiencia 2">
+                            <figcaption>Título de la Experiencia 2</figcaption>
+                        </figure>
+                        <h3 class="proyectos__nombre" id="proyecto-titulo-2">Título de la Experiencia 2</h3>
+                        <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                            Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+                        <div class="proyectos__botones">
+                            <a href="https://github.com/user/proyecto2" class="proyectos__enlace" target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Abrir repositorio del Proyecto 2 en GitHub">Repositorio</a>
+                            <a href="https://user.github.io/proyecto2-demo" class="proyectos__enlace" target="_blank"
+                                rel="noopener noreferrer" aria-label="Ver demostración en vivo del Proyecto 2">Ver
+                                Demo</a>
+                        </div>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección de Contacto -->
+        <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
+            <h2 class="contacto__titulo" id="contacto-titulo">Contacto</h2>
+            <p id="form-descripcion" class="contacto__descripcion">Rellena el siguiente formulario para ponerte en
+                contacto con nosotros:</p>
+            <form class="contacto__formulario" aria-labelledby="contacto-titulo" aria-describedby="form-descripcion">
+                <fieldset class="contacto__fieldset">
+                    <legend class="contacto__legend">Información de contacto</legend>
+
+                    <div class="contacto__grupo">
+                        <label class="contacto__label" for="nombre">Nombre</label>
+                        <input class="contacto__campo" type="text" id="nombre" name="nombre" placeholder="Nombre"
+                            required aria-required="true">
+                    </div>
+
+                    <div class="contacto__grupo">
+                        <label class="contacto__label" for="correo">Correo Electrónico</label>
+                        <input class="contacto__campo" type="email" id="correo" name="correo"
+                            placeholder="Correo Electrónico" required aria-required="true">
+                    </div>
+
+                    <div class="contacto__grupo">
+                        <label class="contacto__label" for="mensaje">Mensaje</label>
+                        <textarea class="contacto__campo contacto__campo--textarea" id="mensaje" name="mensaje"
+                            placeholder="Escribe tu mensaje aquí..." required aria-required="true"></textarea>
+                    </div>
+
+                    <button class="contacto__boton" type="submit"
+                        aria-label="Enviar mensaje de contacto">Enviar</button>
+                </fieldset>
+                <img class="contacto__image" src="./assets/img/contact_image.png" alt="Contacto">
+            </form>
+        </section>
 </body>
+
 </html>
