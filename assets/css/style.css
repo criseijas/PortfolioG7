@@ -8,10 +8,12 @@
 
 body{
     background-color: var(--color-de-fondo);
-    font-family: 'Raleway', sans-serif;
+    font-family: "Quicksand", sans-serif;
     margin: 0;
     box-sizing: border-box;
     padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
     line-height: 1.6;
 }
 
@@ -118,26 +120,33 @@ a{
 .formacion__elemento{
     background-color: var(--color-de-fondo-secundario);
     padding: 2rem;
-    width: 450px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.proyectos__imagen{
+    width: 90%;
+}
+
+.formacion__info{
+    font-size: 1.2rem;
 }
 
 .proyectos__enlace{
     background-color: var(--color-de-fondo-secundario);
     padding: 1rem;
     width: 40%;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     font-weight: 600;
     border-radius: 0.5rem;
-    /*box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;*/
 }
 
-.proyectos__enlace:hover{
+.proyectos__enlace:hover, .contacto__boton:hover{
     background-color: #D2E0FB;
 }
 
-.proyectos__enlace:active{
+.proyectos__enlace:active, .contacto__boton:active{
     background-color: #7EACB5;
 }
 
@@ -160,6 +169,12 @@ a{
     align-items: start;
 }
 
+.contacto__legend{
+    color: #7EACB5;
+    text-align: start;
+    font-size: 1.8rem;
+}
+
 .contacto__grupo{
     width: 100%;
     display: flex;
@@ -177,16 +192,20 @@ a{
     padding: 0.5rem;
     border-radius: 0.5rem;
     box-sizing: border-box;
+    outline: none;
+    font-size: 1.3rem;
 }
 
 .contacto__boton{
     width: 30%;
-    padding: 0.5rem 0;
+    padding: 0.9rem 0;
     border: none;
     border-radius: 0.5rem;
-    background-color: var(--color-de-fondo-menu);
-    font-size: 1.2rem;
+    background-color: var(--color-de-fondo);
+    font-size: 1.4rem;
+    font-weight: 500;
     margin-top: 1.5rem;
+    cursor: pointer;
 }
 
 .contacto__image{
@@ -216,8 +235,12 @@ a{
     }
 
     .formacion__elemento{
-        width: 250px;
-        height: 220px;
+        width: 280px;
+        height: 280px;
+    }
+
+    .proyectos__imagen{
+        width: 50%;
     }
 
     .contacto__formulario{

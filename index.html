@@ -7,44 +7,37 @@
     <title>Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <!-- Fuente del Proyecto Raleway -->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
     <header class="cabecera">
         <div class="cabecera__container">
-            <!-- Se cambia img a picture para mejorar la semántica y flexibilidad en la presentación de imágenes -->
+            <!-- Se pone la etiqueta picture para mejorar la semántica y flexibilidad en la presentación de imágenes -->
             <picture>
                 <img class="cabecera__logo" src="./assets/img/vector.png" alt="Logo de Alura Latam" />
             </picture>
-            <h1 class="cabecera__titulo">Andres Ciro</h1>
+            <h1 class="cabecera__titulo">Fernando Seijas</h1>
         </div>
-
         <!-- El nav se mejora con role="navigation" y aria-label para indicar su propósito -->
         <nav class="navegacion" role="navigation" aria-label="Menú principal">
             <ul class="navegacion__lista">
                 <!-- Se añade aria-label a los enlaces para describir mejor su propósito -->
-                <li class="navegacion__elemento"><a href="#sobre-mi" aria-label="Ir a la sección Sobre mí">Sobre mí</a>
-                </li>
-                <li class="navegacion__elemento"><a href="#habilidades"
-                        aria-label="Ir a la sección Habilidades">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#aficiones" aria-label="Ir a la sección Aficiones">Hobbies</a>
-                </li>
-                <li class="navegacion__elemento"><a href="#formacion"
-                        aria-label="Ir a la sección Formación">Formación</a></li>
-                <li class="navegacion__elemento"><a href="#proyectos"
-                        aria-label="Ir a la sección Proyectos">Proyectos</a></li>
+                <li class="navegacion__elemento"><a href="#sobre-mi" aria-label="Ir a la sección Sobre mí">Sobre mí</a></li>
+                <li class="navegacion__elemento"><a href="#habilidades" aria-label="Ir a la sección Habilidades">Skills</a></li>
+                <li class="navegacion__elemento"><a href="#hobbies" aria-label="Ir a la sección Hobbies">Hobbies</a></li>
+                <li class="navegacion__elemento"><a href="#formacion" aria-label="Ir a la sección Formación">Formación</a></li>
+                <li class="navegacion__elemento"><a href="#proyectos" aria-label="Ir a la sección Proyectos">Proyectos</a></li>
             </ul>
-
             <!-- Se cambia el correo electrónico a un link mailto para mejorar la funcionalidad -->
             <div class="navegacion__elemento navegacion__elemento--color">
-                <a href="mailto:alura@gmail.com" aria-label="Enviar un correo a alura@gmail.com">alura@gmail.com</a>
+                <a href="mailto:fSeijas@gmail.com" aria-label="Enviar un correo a fSeijas@gmail.com">fSeijas@gmail.com</a>
             </div>
         </nav>
     </header>
     <main>
+        <!-- Sección Presentación -->
         <section class="presentacion" aria-labelledby="presentacion-titulo">
             <img class="presentacion__foto" src="./assets/img/perfil.jpg" alt="Foto de perfil de Fernando Seijas"
                 width="250" height="250">
@@ -83,18 +76,18 @@
                 </nav>
             </div>
         </section>
-
+        <!-- Sección Sobre mi -->
         <section class="sobre-mi" id="sobre-mi" aria-labelledby="titulo-sobre-mi">
             <h2 id="titulo-sobre-mi" class="sobre-mi__titulo">Sobre mí</h2>
             <p class="sobre-mi__texto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
-                dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
-                semper sagittis ligula et lacinia.
+                Mi nombre es Fernando Seijas y soy un desarrollador web junior. 
+                Soy un codificador y programador experto, y disfruto usar mis habilidades para contribuir a los emocionantes avances tecnológicos que ocurren todos los días. 
+                Me gradué en la Universidad Nacional de la Matanza en 2010 con una licenciatura en desarrollo de web. 
+                Mientras estaba en la Universidad, obtuve diferentes reconocimientos por mi desempeño académico ejemplar y mis habilidades de liderazgo.
             </p>
             <p class="sobre-mi__texto">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper
-                dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut
-                semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.
+                Además de mi trabajo, me encanta la tecnología y estar al día con las últimas tendencias. También soy un apasionado de la fotografía y el cine, y en mis tiempos libres me gusta hacer fotografías y practicar deportes.
+                Si estás buscando un diseñador de páginas web excepcional, no dudes en ponerte en contacto conmigo. Estoy seguro de que juntos podemos crear un sitio web espectacular que ayude a tu negocio a alcanzar el éxito.
             </p>
             <figure class="sobre-mi__firma-contenedor">
                 <img class="sobre-mi__firma" src="./assets/img/signature.png" alt="Firma personal de Alura Latam"
@@ -102,7 +95,7 @@
                 <figcaption class="sobre-mi__firma-caption">Firma de Fernando Seijas</figcaption>
             </figure>
         </section>
-
+        <!-- Sección de Skills -->
         <section class="habilidades" id="habilidades" aria-labelledby="titulo-habilidades">
             <h2 id="titulo-habilidades" class="habilidades__titulo">Skills</h2>
             <ul class="habilidades__lista" role="list">
@@ -150,7 +143,7 @@
                 </li>
             </ul>
         </section>
-
+        <!-- Sección de Hobbies -->
         <section class="hobbies" id="hobbies" aria-labelledby="titulo-hobbies">
             <h2 id="titulo-hobbies" class="hobbies__titulo">Hobbies</h2>
             <ul class="hobbies__lista" role="list">
@@ -177,13 +170,6 @@
                 </li>
                 <li class="hobbies__elemento">
                     <figure class="hobbies__item">
-                        <img class="hobbies__icono" src="./assets/img/headphones_icon.png" alt="Icono de Auriculares"
-                            width="30" height="30">
-                        <figcaption class="hobbies__nombre">Escuchar música</figcaption>
-                    </figure>
-                </li>
-                <li class="hobbies__elemento">
-                    <figure class="hobbies__item">
                         <img class="hobbies__icono" src="./assets/img/skate_icon.png" alt="Icono de Skate" width="30"
                             height="30">
                         <figcaption class="hobbies__nombre">Practicar skate</figcaption>
@@ -191,51 +177,51 @@
                 </li>
                 <li class="hobbies__elemento">
                     <figure class="hobbies__item">
-                        <img class="hobbies__icono" src="./assets/img/css_icon.png" alt="Icono de CSS" width="30"
+                        <img class="hobbies__icono" src="./assets/img/tv_icon.png" alt="Icono de CSS" width="30"
                             height="30">
-                        <figcaption class="hobbies__nombre">CSS</figcaption>
+                        <figcaption class="hobbies__nombre">Ver series</figcaption>
                     </figure>
                 </li>
             </ul>
         </section>
-
+        <!-- Sección de Formación -->
         <section class="formacion" id="formacion">
             <h2 class="formacion__titulo">Formación académica</h2>
             <ul class="formacion__lista">
                 <li class="formacion__elemento">
                     <article>
-                        <img class="formacion__icono" src="./assets/img/ufpr_logo.png"
-                            alt="Logotipo de la Universidad Federal de Paraná (UFPR)">
-                        <div>
-                            <h3 class="formacion__nombre">Análisis de datos</h3>
-                            <p class="formacion__detalle">2018 - UFPR</p>
+                        <img class="formacion__icono" src="./assets/img/unlam.png"
+                            alt="Logotipo de la Universidad Nacional de la Matanza (UNLM)" width="280">
+                        <div class="formacion__info">
+                            <h3 class="formacion__nombre">Desarrollo Web</h3>
+                            <p class="formacion__detalle">2010 - UNLM</p>
                         </div>
                     </article>
                 </li>
                 <li class="formacion__elemento">
                     <article>
-                        <img class="formacion__icono" src="./assets/img/alura_logo.png" alt="Logotipo de Alura">
-                        <div>
-                            <h3 class="formacion__nombre">Formación en UX Design</h3>
-                            <p class="formacion__detalle">2019 - Alura</p>
+                        <img class="formacion__icono" src="./assets/img/alura_logo.png" alt="Logotipo de Alura" width="280">
+                        <div class="formacion__info">
+                            <h3 class="formacion__nombre">Formación en Front End</h3>
+                            <p class="formacion__detalle">En curso - Alura</p>
                         </div>
                     </article>
                 </li>
                 <li class="formacion__elemento">
                     <article>
-                        <img class="formacion__icono" src="./assets/img/ufrj_logo.png"
-                            alt="Logotipo de la Universidad Federal de Río de Janeiro (UFRJ)">
-                        <div>
-                            <h3 class="formacion__nombre">Posgrado en diseño</h3>
-                            <p class="formacion__detalle">En curso - UFRJ</p>
+                        <img class="formacion__icono" src="./assets/img/logos_idiomas_online_final_INGLES.png"
+                            alt="Logotipo de Centro Universitario de Idiomas (CUI)" width="280">
+                        <div class="formacion__info">
+                            <h3 class="formacion__nombre">Curso de Inglés</h3>
+                            <p class="formacion__detalle">En curso - CUI</p>
                         </div>
                     </article>
                 </li>
             </ul>
         </section>
-
+        <!-- Sección de Proyectos -->
         <section class="proyectos" id="proyectos" aria-labelledby="proyectos-titulo">
-            <h2 class="proyectos__titulo" id="proyectos-titulo">Experiencia Profesional</h2>
+            <h2 class="proyectos__titulo" id="proyectos-titulo">Proyectos</h2>
             <ul class="proyectos__lista">
                 <li class="proyectos__elemento">
                     <article class="proyectos__contenedor" role="region" aria-labelledby="proyecto-titulo-1">
@@ -259,13 +245,12 @@
                 <li class="proyectos__elemento">
                     <article class="proyectos__contenedor" role="region" aria-labelledby="proyecto-titulo-2">
                         <figure>
-                            <img class="proyectos__imagen" src="./assets/img/forca2_print.png"
+                            <img class="proyectos__imagen" src="./assets/img/juegoNroSecreto.jpeg"
                                 alt="Captura de pantalla del Proyecto de la Experiencia 2">
-                            <figcaption>Título de la Experiencia 2</figcaption>
+                            <figcaption>Juego del Número Secreto - Challenge Oracle</figcaption>
                         </figure>
-                        <h3 class="proyectos__nombre" id="proyecto-titulo-2">Título de la Experiencia 2</h3>
-                        <p class="proyectos__descripcion">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                            Nesciunt quisquam unde repudiandae fugiat, earum temporibus!</p>
+                        <h3 class="proyectos__nombre" id="proyecto-titulo-2">Juego del Número Secreto</h3>
+                        <p class="proyectos__descripcion">Aplicación web para jugar adivinando un número secreto.</p>
                         <div class="proyectos__botones">
                             <a href="https://github.com/user/proyecto2" class="proyectos__enlace" target="_blank"
                                 rel="noopener noreferrer"
@@ -278,7 +263,6 @@
                 </li>
             </ul>
         </section>
-
         <!-- Sección de Contacto -->
         <section class="contacto" id="contacto" aria-labelledby="contacto-titulo">
             <h2 class="contacto__titulo" id="contacto-titulo">Contacto</h2>
@@ -312,6 +296,6 @@
                 <img class="contacto__image" src="./assets/img/contact_image.png" alt="Contacto">
             </form>
         </section>
+    </main>    
 </body>
-
 </html>
