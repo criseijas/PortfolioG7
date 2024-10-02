@@ -1,8 +1,9 @@
 :root{
-    --color-de-fondo: #F5F5F5;
-    --color-de-fondo-secundario: #D2E0FB;
+    --color-de-fondo: #FEF9D9;
+    --color-de-fondo-secundario: #DEE5D4;
     --color-de-fondo-menu: #ffffff;
     --color-de-link: #000000;
+    --color-de-boton: #8EACCD;
 }
 
 body{
@@ -57,7 +58,7 @@ a{
     padding: 0 2rem 2rem 2rem;
 }
 
-.presentacion__foto {
+.presentacion__foto{
     border-radius: 50%;
     margin-right: 20px;
 }
@@ -102,7 +103,8 @@ a{
     width: 350px; 
     height: 150px;
     box-sizing: border-box; 
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset; 
 }
 
 .habilidades__item, .hobbies__item{
@@ -118,6 +120,7 @@ a{
     padding: 2rem;
     width: 450px;
     height: 200px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
 }
 
 .proyectos__enlace{
@@ -126,11 +129,22 @@ a{
     width: 40%;
     font-size: 1.2rem;
     font-weight: 600;
+    border-radius: 0.5rem;
+    /*box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;*/
+}
+
+.proyectos__enlace:hover{
+    background-color: #D2E0FB;
+}
+
+.proyectos__enlace:active{
+    background-color: #7EACB5;
 }
 
 .contacto{
     padding: 2rem;
     background-color: var(--color-de-fondo-secundario);
+    margin-top: 3rem;
 }
 
 .contacto__formulario{
@@ -217,7 +231,9 @@ a{
 
     .contacto__image{
         display: block;
-        width: 270px;
+        width: 280px;
         height: 280px;
+        margin-left: 5rem;
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
     }
 }
